@@ -7,7 +7,7 @@ export const initialPortfolioData: PortfolioData = {
     email: "raobrajraj1606@gmail.com",
     phone: "+91 840123860",
     location: "Ahmedabad, GJ 382350",
-    avatarUrl: "/profile.jpg",
+    avatarUrl: "WhatsApp Image 2026-04-24 at 1.07.34 PM.jpeg",
     github: "github.com/brajraj-rao",
     linkedin: "linkedin.com/in/brajraj-rao",
     summary:
