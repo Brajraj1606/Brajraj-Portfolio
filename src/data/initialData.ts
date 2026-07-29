@@ -19,6 +19,7 @@ export const initialPortfolioData: PortfolioData = {
       twitter: "https://x.com/brajraj_rao",
       tryhackme: "https://tryhackme.com/p/brajrajrao",
       hackthebox: "https://app.hackthebox.com/profile/brajrajrao"
+}
   },
   internship: {
     role: "Cyber Security Intern",
