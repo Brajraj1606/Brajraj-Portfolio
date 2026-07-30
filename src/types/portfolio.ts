@@ -1,3 +1,12 @@
+export interface SocialLinks {
+  linkedin?: string;
+  github?: string;
+  instagram?: string;
+  twitter?: string;
+  tryhackme?: string;
+  hackthebox?: string;
+}
+
 export interface ContactInfo {
   name: string;
   title: string;
@@ -8,6 +17,7 @@ export interface ContactInfo {
   github?: string;
   linkedin?: string;
   summary: string;
+  socials?: SocialLinks;
 }
 
 export interface SkillCategory {

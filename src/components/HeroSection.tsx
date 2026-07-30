@@ -15,6 +15,7 @@ import {
   Search
 } from 'lucide-react';
 import { PortfolioData } from '../types/portfolio';
+import { SocialIcons } from './SocialIcons';
 
 interface HeroSectionProps {
   portfolio: PortfolioData;
@@ -120,6 +121,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ portfolio }) => {
                 <MapPin className="w-3.5 h-3.5 text-cyan-400" />
                 <span>{portfolio.contact.location}</span>
               </div>
+            </div>
+
+            {/* Social Media & Hacker Profiles Row */}
+            <div className="pt-1 flex flex-col sm:flex-row sm:items-center gap-3 bg-slate-900/40 p-3.5 rounded-2xl border border-slate-800/80">
+              <span className="text-xs font-bold text-slate-400 uppercase tracking-wider shrink-0">
+                Social Profiles:
+              </span>
+              <SocialIcons socials={portfolio.contact.socials} iconSize="md" />
             </div>
 
             {/* Primary Action Buttons */}

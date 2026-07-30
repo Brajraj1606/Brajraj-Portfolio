@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Shield, Menu, X } from 'lucide-react';
 import { PortfolioData } from '../types/portfolio';
-import SocialLinks from './SocialLinks';
 
 interface HeaderProps {
   portfolio: PortfolioData;
@@ -61,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({
               />
             </div>
           ) : (
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 via-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-cyan-500/20 group-hover:sca[...]
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 via-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
               <Shield className="w-5 h-5" />
             </div>
           )}
@@ -90,9 +89,6 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Right CTA Actions */}
         <div className="hidden sm:flex items-center gap-3">
-          {/* Social Icons */}
-          <SocialLinks />
-
           {/* Accent Selector */}
           <div className="flex items-center bg-slate-800/80 p-1 rounded-lg border border-slate-700/80 mr-1">
             <button
@@ -160,11 +156,6 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <span>Hire / Contact</span>
             </a>
-
-            {/* Mobile social icons */}
-            <div className="pt-2 flex justify-center">
-              <SocialLinks />
-            </div>
           </div>
         </div>
       )}

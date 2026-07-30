@@ -1,4 +1,0 @@
-.social-links { display:flex; gap:12px; align-items:center; }
-.social-icon { color: #e6eef8; font-size: 1.25rem; transition: transform .12s ease, color .12s; }
-.social-icon:hover { transform: translateY(-3px); color: #0a66c2; }
-.social-icon.disabled { opacity: 0.45; cursor: default; pointer-events: none; }

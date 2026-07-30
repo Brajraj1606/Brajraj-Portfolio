@@ -7,11 +7,19 @@ export const initialPortfolioData: PortfolioData = {
     email: "raobrajraj1606@gmail.com",
     phone: "+91 840123860",
     location: "Ahmedabad, GJ 382350",
-    avatarUrl: "WhatsApp Image 2026-04-24 at 1.07.34 PM.jpeg",
+    avatarUrl: "/profile.jpg",
     github: "github.com/brajraj-rao",
     linkedin: "linkedin.com/in/brajraj-rao",
     summary:
-      "Motivated and detail-oriented IT professional pursuing MSc in Cyber Security & Digital Forensics at Gujarat University with strong foundational knowledge in programming languages, web technologies, and a passion for cybersecurity, ethical hacking, and digital forensics."
+      "Motivated and detail-oriented IT professional pursuing MSc in Cyber Security & Digital Forensics at Gujarat University with strong foundational knowledge in programming languages, web technologies, and cybersecurity tools. Experienced in real-world cybersecurity investigation through a 3-month internship with the CID Cyber Crime Cell, Gujarat. Seeking opportunities in cybersecurity or digital forensics to contribute to impactful and secure projects.",
+    socials: {
+      linkedin: "https://linkedin.com/in/brajraj-rao",
+      github: "https://github.com/brajraj-rao",
+      instagram: "https://instagram.com/brajraj_rao",
+      twitter: "https://x.com/brajraj_rao",
+      tryhackme: "https://tryhackme.com/p/brajrajrao",
+      hackthebox: "https://app.hackthebox.com/profile/brajrajrao"
+    }
   },
   internship: {
     role: "Cyber Security Intern",
@@ -213,5 +221,5 @@ export const initialPortfolioData: PortfolioData = {
     "Software development and debugging",
     "Database design and optimisation",
     "Attending hackathons and tech meetups"
-  ],
+  ]
 };

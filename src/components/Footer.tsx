@@ -1,7 +1,7 @@
 import React from 'react';
-import { Shield, ArrowUp, FileText } from 'lucide-react';
+import { Shield, ArrowUp } from 'lucide-react';
 import { PortfolioData } from '../types/portfolio';
-import SocialLinks from './SocialLinks';
+import { SocialIcons } from './SocialIcons';
 
 interface FooterProps {
   portfolio: PortfolioData;
@@ -29,10 +29,9 @@ export const Footer: React.FC<FooterProps> = ({ portfolio }) => {
             </div>
           </div>
 
-          {/* Center Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs text-slate-400 font-medium">
-            <FileText className="w-3.5 h-3.5 text-cyan-400" />
-            <span>Parsed from Resume into Interactive Portfolio</span>
+          {/* Social Icons Bar */}
+          <div className="flex items-center gap-2">
+            <SocialIcons socials={portfolio.contact.socials} iconSize="sm" />
           </div>
 
           {/* Back to top */}
@@ -47,19 +46,19 @@ export const Footer: React.FC<FooterProps> = ({ portfolio }) => {
 
         <div className="mt-8 pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>© {new Date().getFullYear()} {portfolio.contact.name}. All rights reserved.</p>
-
           <div className="flex items-center gap-4">
-            <div className="hidden sm:flex items-center gap-4">
-              <a href="#overview" className="hover:text-slate-300 transition-colors">Overview</a>
-              <a href="#internship" className="hover:text-slate-300 transition-colors">CID Internship</a>
-              <a href="#projects" className="hover:text-slate-300 transition-colors">Projects</a>
-              <a href="#contact" className="hover:text-slate-300 transition-colors">Contact</a>
-            </div>
-
-            {/* Social icons in footer */}
-            <div className="flex items-center">
-              <SocialLinks />
-            </div>
+            <a href="#overview" className="hover:text-slate-300 transition-colors">
+              Overview
+            </a>
+            <a href="#internship" className="hover:text-slate-300 transition-colors">
+              CID Internship
+            </a>
+            <a href="#projects" className="hover:text-slate-300 transition-colors">
+              Projects
+            </a>
+            <a href="#contact" className="hover:text-slate-300 transition-colors">
+              Contact
+            </a>
           </div>
         </div>
       </div>

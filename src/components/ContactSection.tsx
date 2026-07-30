@@ -9,6 +9,7 @@ import {
   MessageSquare
 } from 'lucide-react';
 import { PortfolioData } from '../types/portfolio';
+import { SocialIcons } from './SocialIcons';
 
 interface ContactSectionProps {
   portfolio: PortfolioData;
@@ -130,6 +131,14 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ portfolio }) => 
                   <span className="text-xs text-slate-400 font-medium block">Current Location</span>
                   <span className="text-sm font-bold text-white">{portfolio.contact.location}</span>
                 </div>
+              </div>
+
+              {/* Social Profiles & Platforms Block */}
+              <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">
+                  Connect On Social & Platforms
+                </span>
+                <SocialIcons socials={portfolio.contact.socials} iconSize="md" />
               </div>
             </div>
           </div>
