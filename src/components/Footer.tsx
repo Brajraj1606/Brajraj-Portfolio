@@ -1,6 +1,7 @@
 import React from 'react';
 import { Shield, ArrowUp, FileText } from 'lucide-react';
 import { PortfolioData } from '../types/portfolio';
+import SocialLinks from './SocialLinks';
 
 interface FooterProps {
   portfolio: PortfolioData;
@@ -46,19 +47,19 @@ export const Footer: React.FC<FooterProps> = ({ portfolio }) => {
 
         <div className="mt-8 pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>© {new Date().getFullYear()} {portfolio.contact.name}. All rights reserved.</p>
+
           <div className="flex items-center gap-4">
-            <a href="#overview" className="hover:text-slate-300 transition-colors">
-              Overview
-            </a>
-            <a href="#internship" className="hover:text-slate-300 transition-colors">
-              CID Internship
-            </a>
-            <a href="#projects" className="hover:text-slate-300 transition-colors">
-              Projects
-            </a>
-            <a href="#contact" className="hover:text-slate-300 transition-colors">
-              Contact
-            </a>
+            <div className="hidden sm:flex items-center gap-4">
+              <a href="#overview" className="hover:text-slate-300 transition-colors">Overview</a>
+              <a href="#internship" className="hover:text-slate-300 transition-colors">CID Internship</a>
+              <a href="#projects" className="hover:text-slate-300 transition-colors">Projects</a>
+              <a href="#contact" className="hover:text-slate-300 transition-colors">Contact</a>
+            </div>
+
+            {/* Social icons in footer */}
+            <div className="flex items-center">
+              <SocialLinks />
+            </div>
           </div>
         </div>
       </div>
