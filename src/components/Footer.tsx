@@ -59,14 +59,6 @@ export const Footer: React.FC<FooterProps> = ({ portfolio }) => {
             {/* Social icons in footer */}
             <div className="flex items-center">
               <SocialLinks />
-              socials: {
-  linkedin: "https://linkedin.com/in/brajraj-rao",
-  github: "https://github.com/brajraj-rao",
-  instagram: "https://instagram.com/brajraj_rao",
-  twitter: "https://x.com/brajraj_rao",
-  tryhackme: "https://tryhackme.com/p/brajrajrao",
-  hackthebox: "https://app.hackthebox.com/profile/brajrajrao"
-}
             </div>
           </div>
         </div>
