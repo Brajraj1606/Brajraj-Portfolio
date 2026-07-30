@@ -214,12 +214,4 @@ export const initialPortfolioData: PortfolioData = {
     "Database design and optimisation",
     "Attending hackathons and tech meetups"
   ],
-  socials: {
-    linkedin: "https://linkedin.com/in/brajraj-rao",
-    github: "https://github.com/brajraj-rao",
-    instagram: "https://instagram.com/brajraj_rao",
-    twitter: "https://x.com/brajraj_rao",
-    tryhackme: "https://tryhackme.com/p/brajrajrao",
-    hackthebox: "https://app.hackthebox.com/profile/brajrajrao"
-  }
 };
