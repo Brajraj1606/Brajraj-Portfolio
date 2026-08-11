@@ -12,14 +12,7 @@ export const initialPortfolioData: PortfolioData = {
     linkedin: "linkedin.com/in/brajraj-rao",
     summary:
       "Motivated and detail-oriented IT professional pursuing MSc in Cyber Security & Digital Forensics at Gujarat University with strong foundational knowledge in programming languages, web technologies, and cybersecurity tools. Experienced in real-world cybersecurity investigation through a 3-month internship with the CID Cyber Crime Cell, Gujarat. Seeking opportunities in cybersecurity or digital forensics to contribute to impactful and secure projects.",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/brajrajsingh-rao-a3534a245/",
-      github: "https://github.com/Brajraj1606",
-      instagram: "https://www.instagram.com/brajrajsingh_rao/",
-      twitter: "https://x.com/RaoBrajrajsingh",
-      tryhackme: "https://tryhackme.com/p/ShadowOx1",
-      hackthebox: "https://app.hackthebox.com/users/3792525?profile-top-tab=machines&ownership-period=1M&profile-bottom-tab=prolabs"
-    }
+   
   },
   internship: {
     role: "Cyber Security Intern",
